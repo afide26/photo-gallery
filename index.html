@@ -6,11 +6,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Flexbox designed webpage">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Amazing Alaska</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <title>Amazing Zenva Page AboutAlaska</title>
+  <style>
+    a {
+      color: #fff;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    footer {
+      background-color: #131622;
+      background: linear-gradient(to bottom, #284e7a, #000 100%);
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    footer p {
+      text-transform: uppercase;
+      font-size: .8rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: .7rem;
+    }
+
+    footer ul {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: row;
+    }
+
+    footer ul li {
+      margin: 0 8px;
+    }
+
+    footer ul li a {
+      cursor: pointer;
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width:800px) {
+      footer {
+        padding: 80px 15px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-
+  <footer>
+    <ul>
+      <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></a></i></li>
+      <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></a></i></li>
+      <li><a href="#" target="_blank"><i class="fab fa-youtube-square"></a></i></li>
+      <li><a href="#" target="_blank"><i class="fab fa-pinterest"></a></i></li>
+    </ul>
+    <p>
+      &copy; <script>
+        document.write(new Date().getFullYear())
+      </script> It sure is fun create websites.
+    </p>
+    <p>
+      &ldquo;Tell me and I forget, teach me and I may remember, involve me and I learn.&rdquo;
+      &mdash;Benjamin Franklin
+    </p>
+  </footer>
 </body>
 
 </html>
