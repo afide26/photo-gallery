@@ -13,7 +13,49 @@
     crossorigin="anonymous">
   <title>Amazing Zenva Page AboutAlaska</title>
   <style>
+    #gallery {
+      background-color: #fff;
+    }
 
+    #gallery .grid li {
+      padding: 20px;
+      height: 350px;
+      border-radius: 3px;
+      background-clip: content-box;
+      background-size: cover;
+      background-position: center;
+      background-color: #333;
+    }
+
+    #gallery ul.grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    #gallery .grid li.small {
+      flex-basis: 40%;
+    }
+
+    #gallery .grid li.large {
+      flex-basis: 60%;
+    }
+
+    #gallery p {
+      max-width: 800px;
+      text-align: center;
+      margin: 0 auto 35px;
+      line-height: 2;
+    }
+
+    @media screen and (max-width: 1000px) {
+
+      #gallery .grid li.small,
+      #gallery .grid li.large {
+        flex-basis: 100%;
+      }
+    }
   </style>
 </head>
 
@@ -42,6 +84,23 @@
   </div>
   </div>
   <!-- *********************************** -->
+  <div id="gallery">
+    <div class="photo-gallery">
+      <h3 class="title">Gallery</h3>
+      <p>
+        Released under the CC0 license, Pexels helps people to get access to beautiful photos that they can use freely
+        in projects like websites, blogs, products or book covers. Some of the best free stock photos are at Pexels.
+      </p>
+      <hr>
+      <ul class="grid">
+        <li class="small" style="background-image:url('./img/alaska-wilderness-sky-aurora-borealis.jpg')"></li>
+        <li class="large" style="background-image:url('./img/glacier.jpg')"></li>
+        <li class="small" style="background-image:url('./img/alaska-glacier-ice-mountains.jpg')"></li>
+        <li class="large" style="background-image:url('./img/clouds.jpg')"></li>
+      </ul>
+    </div>
+    <hr>
+  </div>
   <!-- *********************************** -->
   <footer id="social-media">
     <ul>
