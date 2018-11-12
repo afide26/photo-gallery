@@ -90,7 +90,7 @@ h3.title {
 }
 
 hr {
-  width: 150px;
+  width: 170px;
   height: 2px;
   background-color: #2196f3;
   border: 0;
@@ -315,6 +315,25 @@ hr {
 }
 
 /* END OF QUOTES STYLES */
+
+/* START OF MAP STYLES */
+section.flexbox-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section.flexbox-section p {
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 1.5
+}
+
+/* END OF MAP STYLES */
 
 /* START OF FOOTER STYLES */
 #social-media {
